@@ -373,6 +373,12 @@ For the ongoing example, convert the :file:`app/config/assets/framework/forms/fr
 
   The :guilabel:`Save to File System` button uses the *form_id* and *table_id* within the :file:`.xlsx` file to identify where to write the :file:`formDef.json` file. If you have copied the :file:`.xlsx` file from some other location and forgot to edit it, it may update back to that older location! If the *form_id* is equal to the *table_id*, two additional files are written that define the table's user data fields and that define the key-value properties for the table.
 
+ if the conversion still persists n saving on the same folder you can use the cmd and run this command 
+.. code-block:: console
+
+    grunt xlsx-convert-all
+This will automatically create  the  `formDef.json` in their respective folders 
+
 Once you have made these changes and used XLSX Converter on the :file:`framework.xlsx` file to update the :file:`app/config/assets/framework/forms/framework/formDef.json` file, you should see your new form show up in the :guilabel:`Preview` tab of the Application Designer. Clicking on that should open your form.
 
 .. tip::
